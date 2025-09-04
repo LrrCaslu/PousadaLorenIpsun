@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin — Pousada Mar & Sol</title>
+  <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+<body>
+  <header class="admin-header">
+    <div class="container">
+      <h1>Área Administrativa</h1>
+      <div class="actions">
+        <button id="btn-logout" class="btn-outline" hidden>Sair</button>
+        <a href="index.html">Ver site</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Login -->
+    <section id="login-box" class="card">
+      <h2>Entrar</h2>
+      <form id="login-form">
+        <label>Usuário
+          <input name="username" required autocomplete="username" />
+        </label>
+        <label>Senha
+          <input name="password" type="password" required autocomplete="current-password" />
+        </label>
+        <button class="btn-primary" type="submit">Acessar</button>
+        <p id="login-msg" class="msg"></p>
+      </form>
+    </section>
+
+    <!-- Painel -->
+    <section id="panel" class="panel" hidden>
+      <div class="grid">
+        <div class="card">
+          <h2>Adicionar fotos</h2>
+          <form id="upload-form">
+            <label>Imagem (JPG, PNG, WEBP até 5MB)
+              <input name="image" type="file" accept="image/jpeg,image/png,image/webp" required />
+            </label>
+            <label>Título (opcional)
+              <input name="title" maxlength="120" />
+            </label>
+            <label>Legenda (opcional)
+              <input name="caption" maxlength="220" />
+            </label>
+            <button class="btn-primary" type="submit">Enviar</button>
+            <p id="upload-msg" class="msg"></p>
+          </form>
+        </div>
+
+        <div class="card">
+          <h2>Fotos existentes</h2>
+          <div id="list"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

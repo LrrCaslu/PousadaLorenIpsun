@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pousada Mar & Sol</title>
+  <meta name="description" content="Pousada aconchegante à beira-mar. Quartos confortáveis, café da manhã e atendimento excepcional." />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">Pousada <strong>Loren Ipsun</strong></a>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#acomodacoes">Acomodações</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+        <a href="admin.html">Área Admin</a>
+        <!-- <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema" aria-pressed="false" title="Alternar tema">
+  <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+</button> -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- Apresentação -->
+  <section class="hero">
+    <div class="hero-inner container">
+      <h1>Seu refúgio à beira-mar</h1>
+      <p>Conforto, hospitalidade e a brisa do oceano esperando por você.</p>
+      <a href="#contato">Reserve agora</a>
+    </div>
+  </section>
+
+  <main>
+    <!-- Sobre -->
+    <section id="sobre" class="section container">
+      <h2>Sobre a Pousada Loren Ipsum</h2>
+      <p>
+        Localizada em <strong>Penha/SC</strong>, a Pousada Loren Ipsum é o lugar perfeito para
+        apreciar momentos de tranquilidade, com a combinação de conforto, lazer e uma hospitalidade única.
+        A poucos minutos do <strong>Parque Beto Carrero World</strong>, nossa pousada oferece o encontro ideal
+        para suas aventuras e seu relaxamento.
+      </p>
+
+      <ul class="amenities">
+        <li><span>🍩</span> Café da manhã incluso</li>
+        <li><span>🎢</span> 1km do Beto Carrero</li>
+        <li><span>📶</span> Wi‑Fi gratuito</li>
+        <li><span>🅿️</span> Estacionamento</li>
+        <li><span>🧹</span> Higienização diária</li>
+        <li><span>🐶</span> Pet‑friendly (sob consulta)</li>
+      </ul>
+    </section>
+
+    <!-- Acomodações -->
+    <section id="acomodacoes" class="section section-alt">
+      <div class="container">
+        <h2>Acomodações</h2>
+
+        <div class="cards">
+          <!-- Suíte Standard -->
+          <article class="card room">
+            <figure class="room-media">
+              <picture>
+                <img src="bg/standard.jpeg" alt="Suíte Standard">
+              </picture>
+            </figure>
+            <div class="room-body">
+              <h3>Suíte Standard</h3>
+              <p>Ideal para até 2 pessoas. Ar-condicionado, TV e frigobar.</p><br>
+              <h3>Á partir de R$ 39,90.</h3>
+            </div>
+          </article>
+
+          <!-- Suíte Família -->
+          <article class="card room">
+            <figure class="room-media">
+              <picture>
+                <img src="bg/familia.jpeg" alt="Suíte Família">
+              </picture>
+            </figure>
+            <div class="room-body">
+              <h3>Suíte Família</h3>
+              <p>Para até 4 pessoas. Espaçosa, com varanda e vista parcial do mar.</p><br>
+              <h3>Á partir de R$ 59,90.</h3>
+            </div>
+          </article>
+
+          <!-- Suíte Master -->
+          <article class="card room">
+            <figure class="room-media">
+              <picture>
+                <img src="bg/master.jpeg" alt="Suíte Master">
+              </picture>
+            </figure>
+            <div class="room-body">
+              <h3>Suíte Master</h3>
+              <p>Conforto premium com vista para o mar e cama king size.</p><br>
+              <h3>Á partir de R$ 89,90.</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="section container">
+      <h2>Galeria</h2>
+      <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
+    </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section section-alt">
+    <div class="container contact">
+      <h2>Contato & Localização</h2>
+      <p>
+        📞 <a href="https://wa.me/5547999999999" target="_blank">(47) 99999-9999</a><br>
+        ✉️ <a href="mailto:reservas@pousadamarsol.com.br">reservas@lorenipsun.com.br</a>
+      </p>
+      <div class="map-wrapper">
+        <iframe
+          title="Mapa da Pousada"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7095.314297854326!2d-48.6240495!3d-26.7949996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sBR!4v1680000000001"
+          width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Fechar">&times;</button>
+    <img id="lightbox-img" alt="" />
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <dialog id="img-dialog" class="img-dialog">
+  <button class="img-dialog__close" aria-label="Fechar (Esc)" formmethod="dialog">×</button>
+  <img id="img-dialog-src" alt="" />
+  <p id="img-dialog-cap"></p>
+  </dialog>
+
+  <script src="script.js"></script></script>
+</body>
+</html>
